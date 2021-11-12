@@ -1,7 +1,12 @@
-class TropiPy:
+from SingletonMeta import SingletonMeta
+
+class TropiPy(metaclass=SingletonMeta):
     def __init__(self, option):
         self.cfg = {
-            url: '',
+            url: 'localhost:3001',
+            endpoint: {
+                'login': '/api/access/login'
+            },
             token = 'Bearer';
             contentType = 'application/json';
         }
