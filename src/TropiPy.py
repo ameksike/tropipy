@@ -1,7 +1,8 @@
 from SingletonMeta import SingletonMeta
 
 class TropiPy(metaclass=SingletonMeta):
-    def __init__(self, option):
+
+    def __init__(self, option=None):
         self.cfg = {
             url: 'localhost:3001',
             endpoint: {
@@ -10,8 +11,12 @@ class TropiPy(metaclass=SingletonMeta):
             token = 'Bearer';
             contentType = 'application/json';
         }
+    
+    @staticmethod
+    def this(option=None):
+        return TropiPy(option)
 
-    def set(self, option):
+    def setCfg(self, option):
         self.cfg = option
 
     def get(self, modname):
