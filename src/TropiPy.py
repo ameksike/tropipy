@@ -27,7 +27,7 @@ class TropiPy(metaclass=SingletonMeta):
     @return OBJECT
     '''
     @staticmethod
-    def this(option=None):
+    def sdk(option=None):
         return TropiPy(option)
 
     '''
