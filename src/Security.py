@@ -12,3 +12,6 @@ class Security:
         })
         response.status_code
         return response.json()
+    
+    def getData(self):
+        return "kk"

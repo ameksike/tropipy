@@ -3,9 +3,8 @@ from src import TropiPy
 
 class MainTest(unittest.TestCase):
     def test_1(self):
-        result = 1 #TropiPy.this()
-        print(result)
-        self.assertEqual(result, 1)
+        result = TropiPy.this().get("Security").getData()
+        self.assertEqual(result, 'kk')
 
     def test_upper(self):
         self.assertEqual('foo'.upper(), 'FOO')
