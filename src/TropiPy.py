@@ -12,8 +12,8 @@ class TropiPy(metaclass=SingletonMeta):
             endpoint: {
                 'login': '/api/v2/access/token'
             },
-            token = 'Bearer';
-            contentType = 'application/json';
+            token: 'Bearer',
+            contentType: 'application/json'
         }
     
     @staticmethod

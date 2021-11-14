@@ -1,5 +1,5 @@
 import unittest
-#from tropipy.src.TropiPy import TropiPy
+from src import TropiPy
 
 class MainTest(unittest.TestCase):
     def test_1(self):
