@@ -1,8 +1,8 @@
 import unittest
 from src import TropiPy
 
-class LoginTest(unittest.TestCase):
-    def test_basic_login(self):
+class PaylinkTest(unittest.TestCase):
+    def create_paylink(self):
         TppSdk = TropiPy.sdk({
             "credential": {
                 'id': 'cf33a19425421dcdfc82d26af3b126d0',
