@@ -8,7 +8,7 @@ class Security:
 
     def login(self, credential=None, grant="client_credentials", scope=""):
         cred = credential != None if credential else self.cfg['credential']
-        url = self.cfg['url'] + self.cfg['endpoint']['login']
+        url = self.sdk.getUrl('login') 
         response = requests.post(url, json={
             "grant_type": grant,
             "client_id": cred['id'],

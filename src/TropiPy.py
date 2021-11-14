@@ -10,7 +10,8 @@ class TropiPy(metaclass=SingletonMeta):
                 'secret': ''
             },
             'endpoint': {
-                'login': '/api/v2/access/token'
+                'login': '/api/v2/access/token',
+                'paylink': '/api/v2/movements/in/paylink',
             },
             'token': {
                 'type': 'Bearer',
@@ -25,6 +26,9 @@ class TropiPy(metaclass=SingletonMeta):
             for key, value in option.items():
                 self.cfg[key] = value
         return self
+
+    def getUrl(self, key):
+        return self.cfg['url'] + self.cfg['endpoint'][key]
     
     '''
     @decription factory
