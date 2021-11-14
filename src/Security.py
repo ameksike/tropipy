@@ -10,7 +10,7 @@ class Security:
             "client_id": self.cfg.credential.id,
             "client_secret": self.cfg.credential.secret,
         })
-        response.status_code
+        print(response.status_code)
         return response.json()
     
     def getData(self):

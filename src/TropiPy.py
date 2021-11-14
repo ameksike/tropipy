@@ -15,10 +15,12 @@ class TropiPy(metaclass=SingletonMeta):
             'token': 'Bearer',
             'contentType': 'application/json'
         }
+        self.configure(option)
 
-    def configure(self, option):
-        for key, value in option.items():
-            self.cfg[key] = value
+    def configure(self, option=None):
+        if option != None:
+            for key, value in option.items():
+                self.cfg[key] = value
         return self
     
     '''
