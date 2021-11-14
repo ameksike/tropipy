@@ -4,12 +4,13 @@ from src import TropiPy
 class LoginTest(unittest.TestCase):
     def test_basic_login(self):
         TppSdk = TropiPy.sdk({
+            "url": "https://tropipay-dev.herokuapp.com/",
             "credential": {
-                'id': 'dsfasdfasf98a7sd98f7as098d',
-                'secret': '7df5hd7f5h7df65h8d7fhdfhfh6ddfh75h',
+                'id': 'cf33a19425421dcdfc82d26af3b126d0',
+                'secret': '4a7eb4562e21eca14b9318d685950e3e',
             }
         })
-        result = TppSdk.get("Security").getData()
+        result = TppSdk.get("Security").login()
         self.assertEqual(result, 'kk')
 
 if __name__ == '__main__':

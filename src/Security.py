@@ -4,11 +4,14 @@ class Security:
     def __init__(self, cfg):
         self.cfg = cfg
 
-    def login(self):
-        response = requests.post(self.cfg.endpoint.login, json={
-            "grant_type": "client_credentials",
-            "client_id": self.cfg.credential.id,
-            "client_secret": self.cfg.credential.secret,
+    def login(self, credential=None, grant="client_credentials", scope=""):
+        cred = credential != None if credential else self.cfg['credential']
+        url = self.cfg['url'] + self.cfg['endpoint']['login']
+        response = requests.post(url, json={
+            "grant_type": grant,
+            "client_id": cred['id'],
+            "client_secret": cred['secret'],
+            "scope": scope
         })
         print(response.status_code)
         return response.json()

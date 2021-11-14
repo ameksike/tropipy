@@ -12,7 +12,9 @@ class TropiPy(metaclass=SingletonMeta):
             'endpoint': {
                 'login': '/api/v2/access/token'
             },
-            'token': 'Bearer',
+            'token': {
+                'type': 'Bearer'
+            },
             'contentType': 'application/json'
         }
         self.configure(option)
