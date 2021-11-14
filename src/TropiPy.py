@@ -13,7 +13,8 @@ class TropiPy(metaclass=SingletonMeta):
                 'login': '/api/v2/access/token'
             },
             'token': {
-                'type': 'Bearer'
+                'type': 'Bearer',
+                'access_token': None
             },
             'contentType': 'application/json'
         }
