@@ -1,7 +1,7 @@
 import unittest
-from ..src.TropiPy import TropiPy
+#from tropipy.src.TropiPy import TropiPy
 
-class TropiPyTest(unittest.TestCase):
+class MainTest(unittest.TestCase):
     def test_1(self):
         result = 1 #TropiPy.this()
         print(result)
