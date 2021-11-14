@@ -2,7 +2,7 @@ import unittest
 from src import TropiPy
 
 class PaylinkTest(unittest.TestCase):
-    def create_paylink(self):
+    def test_create_paylink(self):
         TppSdk = TropiPy.sdk({
             "credential": {
                 'id': 'cf33a19425421dcdfc82d26af3b126d0',
@@ -16,7 +16,7 @@ class PaylinkTest(unittest.TestCase):
             "description": "some product description",
             "amount": 11500,
             "currency": "EUR",
-            "singleUse": true,
+            "singleUse": "true",
             "reasonId": 4,
             "reasonDes": "",
             "expirationDays": 1,
