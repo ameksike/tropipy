@@ -20,7 +20,4 @@ class Security:
             for key, value in data.items():
                 self.sdk.cfg['token'][key] = value
         return data
-    
-    def getData(self):
-        print(self.cfg)
-        return "kk"
+
