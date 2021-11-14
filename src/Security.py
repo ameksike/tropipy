@@ -6,7 +6,9 @@ class Security:
 
     def login(self):
         response = requests.post(self.cfg.endpoint.login, json={
-            "key": "value"
+            "grant_type": "client_credentials",
+            "client_id": self.cfg.credential.id,
+            "client_secret": self.cfg.credential.secret,
         })
         response.status_code
         return response.json()

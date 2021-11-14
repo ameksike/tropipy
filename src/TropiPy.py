@@ -5,8 +5,12 @@ class TropiPy(metaclass=SingletonMeta):
     def __init__(self, option=None):
         self.cfg = {
             url: 'localhost:3001',
+            credential: {
+                'id': '',
+                'secret': ''
+            },
             endpoint: {
-                'login': '/api/access/login'
+                'login': '/api/v2/access/token'
             },
             token = 'Bearer';
             contentType = 'application/json';
