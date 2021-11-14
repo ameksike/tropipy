@@ -14,4 +14,5 @@ class Security:
         return response.json()
     
     def getData(self):
+        print(self.cfg)
         return "kk"

@@ -15,14 +15,27 @@ class TropiPy(metaclass=SingletonMeta):
             'token': 'Bearer',
             'contentType': 'application/json'
         }
+
+    def configure(self, option):
+        for key, value in option.items():
+            self.cfg[key] = value
+        return self
     
+    '''
+    @decription factory
+    @param OBJECT option
+    @return OBJECT
+    '''
     @staticmethod
     def this(option=None):
         return TropiPy(option)
 
-    def configure(self, option):
-        self.cfg = option
-
+    '''
+    @decription IoC
+    @param STRING modname
+    @param OBJECT param
+    @return OBJECT
+    '''
     def get(self, modname, param=None):
         module = __import__(modname)
         modcls = getattr(module, modname)

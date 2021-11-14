@@ -2,8 +2,11 @@ import unittest
 from src import TropiPy
 
 class MainTest(unittest.TestCase):
-    def test_1(self):
-        result = TropiPy.this().get("Security").getData()
+    def test_basic_configure(self):
+        result = TropiPy.this().configure({
+            'token': '.....',
+            'code': '......',
+        }).get("Security").getData()
         self.assertEqual(result, 'kk')
 
     def test_upper(self):
