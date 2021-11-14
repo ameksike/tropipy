@@ -4,7 +4,7 @@ class TropiPy(metaclass=SingletonMeta):
 
     def __init__(self, option=None):
         self.cfg = {
-            'url': 'localhost:3001',
+            'url': 'https://tropipay-dev.herokuapp.com',
             'credential': {
                 'id': '',
                 'secret': ''
