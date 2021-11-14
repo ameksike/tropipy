@@ -16,7 +16,7 @@ class TropiPy(metaclass=SingletonMeta):
     def this(option=None):
         return TropiPy(option)
 
-    def setCfg(self, option):
+    def configure(self, option):
         self.cfg = option
 
     def get(self, modname):
