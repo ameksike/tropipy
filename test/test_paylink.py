@@ -30,7 +30,6 @@ class PaylinkTest(unittest.TestCase):
 
             "serviceDate": ""
         })
-
         self.assertTrue(TppSdk.cfg['token']['access_token'] != None)
         self.assertIn('shortUrl', result)
 

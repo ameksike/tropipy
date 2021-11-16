@@ -10,7 +10,6 @@ class LoginTest(unittest.TestCase):
             }
         })
         result = TppSdk.get("Security").login()
-        print(result)
         self.assertTrue(TppSdk.cfg['token']['access_token'] != None)
 
 if __name__ == '__main__':
