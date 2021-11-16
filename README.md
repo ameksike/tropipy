@@ -7,5 +7,5 @@ TropiPay SDK Python
 - pip list -v
 
 ## Test
-- python -m unittest discover -v
-- python -m unittest test/main.py
+- python -m unittest  # One command to run them all
+- python -m unittest test/test_login.py # selective run some test suite
