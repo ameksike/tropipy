@@ -6,14 +6,14 @@ class Security:
         self.cfg = option
         self.sdk = TropiPy.sdk()
 
-    def login(self, credential=None, grant="client_credentials", scope=""):
+    def login(self, credential=None, grant="client_credentials"):
         cred = credential != None if credential else self.cfg['credential']
         url = self.sdk.getUrl('login') 
         response = requests.post(url, json={
             "grant_type": grant,
-            "client_id": cred['id'],
-            "client_secret": cred['secret'],
-            "scope": scope
+            "client_id": cred.get('id'),
+            "client_secret": cred.get('secret'),
+            "scope": cred.get('scope')
         })
         data = response.json()
         if response.status_code == 200:

@@ -7,9 +7,10 @@ class PaylinkTest(unittest.TestCase):
             "credential": {
                 'id': 'cf33a19425421dcdfc82d26af3b126d0',
                 'secret': '4a7eb4562e21eca14b9318d685950e3e',
+                'scope': 'ALLOW_GET_PROFILE_DATA ALLOW_GET_BALANCE ALLOW_EXTERNAL_CHARGE'
             }
         })
-        TppSdk.get("Security").login()
+        token = TppSdk.get("Security").login()
         result = TppSdk.get("Paylink").create({
             "reference": "demo23232323",
             "concept": "some product id",
@@ -29,7 +30,6 @@ class PaylinkTest(unittest.TestCase):
 
             "serviceDate": ""
         })
-        # print(result)
 
         self.assertTrue(TppSdk.cfg['token']['access_token'] != None)
         self.assertIn('shortUrl', result)

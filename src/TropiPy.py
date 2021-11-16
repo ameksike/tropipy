@@ -7,7 +7,8 @@ class TropiPy(metaclass=SingletonMeta):
             'url': 'https://tropipay-dev.herokuapp.com',
             'credential': {
                 'id': '',
-                'secret': ''
+                'secret': '',
+                'scope': 'ALLOW_EXTERNAL_CHARGE ALLOW_CREATE_BENEFICIARY ALLOW_UPDATE_BENEFICIARY ALLOW_PAYMENT_IN ALLOW_PAYMENT_OUT ALLOW_MARKET_PURCHASES ALLOW_GET_PROFILE_DATA ALLOW_GET_BALANCE ALLOW_GET_MOVEMENT_LIST'
             },
             'endpoint': {
                 'login': '/api/v2/access/token',
