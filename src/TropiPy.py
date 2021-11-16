@@ -11,7 +11,7 @@ class TropiPy(metaclass=SingletonMeta):
             },
             'endpoint': {
                 'login': '/api/v2/access/token',
-                'paylink': '/api/v2/movements/in/paylink',
+                'paylink': '/api/v2/paymentcards',
             },
             'token': {
                 'type': 'Bearer',

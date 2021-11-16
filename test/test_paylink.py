@@ -14,6 +14,7 @@ class PaylinkTest(unittest.TestCase):
             "reference": "demo23232323",
             "concept": "some product id",
             "description": "some product description",
+            "favorite": "true",
             "amount": 11500,
             "currency": "EUR",
             "singleUse": "true",
@@ -25,12 +26,13 @@ class PaylinkTest(unittest.TestCase):
             "urlSuccess": "",
             "urlFailed": "",
             "urlNotification": "",
-            "expirationDate": "2021-03-31",
+
             "serviceDate": ""
         })
-        print(result)
+        # print(result)
 
         self.assertTrue(TppSdk.cfg['token']['access_token'] != None)
+        self.assertIn('shortUrl', result)
 
 if __name__ == '__main__':
     unittest.main()
