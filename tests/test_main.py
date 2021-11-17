@@ -1,5 +1,5 @@
 import unittest
-from src import TropiPy
+from tropipy import TropiPy
 
 class MainTest(unittest.TestCase):
     def test_basic_configure(self):

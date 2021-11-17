@@ -1,5 +1,5 @@
 import requests
-from TropiPy import TropiPy
+from tropipy import TropiPy
 
 class Security:
     def __init__(self, option):

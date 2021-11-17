@@ -1,4 +1,4 @@
-from base.SingletonMeta import SingletonMeta
+from .base.SingletonMeta import SingletonMeta
 
 class TropiPy(metaclass=SingletonMeta):
 

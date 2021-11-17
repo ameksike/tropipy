@@ -1,5 +1,5 @@
 import unittest
-from src import TropiPy
+from tropipy import TropiPy
 
 class PaylinkTest(unittest.TestCase):
     def test_create_paylink(self):
