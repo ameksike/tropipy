@@ -1,3 +1,5 @@
-from tropipy import *
+from tropipy.TropiPy import TropiPy
+from tropipy.Paylink import Paylink
+from tropipy.Security import Security
 
-__version__ = "1.0.0"
+__version__ = "0.0.1"
