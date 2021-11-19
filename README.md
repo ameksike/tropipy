@@ -1,5 +1,23 @@
 # TropiPy
-Python SDK for TropiPay, form more information see [TropiPay Web](http://www.tropipay.com/) and our [wiki](https://github.com/ameksike/tropipy/wiki).
+TropiPay is an electronic wallet that allows you to execute the most common financial operations of the day to day. It is easy and safe. It technology protects your money and ensures it reaches its destination safely. With your TropiPay wallet,you can send remittances and execute the most common collection and payment operations, from paying at a store to sharing expenses with your friends.
+
+- Remittances and family support.
+- Transfers between bank accounts.
+- Paying with your mobile phone.
+- Share expenses with your friends.
+- Top-up phone balance.
+- Promotions and discounts every month.
+
+FOR SMALL COMPANIES AND BUSINESSES: 
+Tropipay offer online payment and collection solutions to international customers and global markets. Whether you are a business owner, professional, or freelancer, Tropipay is the ultimate financial tool.
+
+- Transfers between bank accounts.
+- Sale through social networks.
+- E-commerce integration through API.
+- Customized solutions for tourism companies.
+- Cross Border payments globally
+
+This project is focused on create a simple python SDK for TropiPay, in order to facilitate the integration of the TropiPay platform with frameworks such as Django, Flask, etc. Form more information see [TropiPay Web](http://www.tropipay.com/) and our [wiki](https://github.com/ameksike/tropipy/wiki).
 
 ## Install
 - pip install tropipy

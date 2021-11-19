@@ -8,7 +8,7 @@ setuptools.setup(
     version="0.0.1",
     author="Antonio Membrides Espinosa, Sergio Daniel",
     author_email="tonykssa@gmail.com",
-    description="TropiPay SDK",
+    description="Python SDK for TropiPay",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/ameksike/tropipy",
