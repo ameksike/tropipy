@@ -1,4 +1,4 @@
-from .base.SingletonMeta import SingletonMeta
+from tropipy.SingletonMeta import SingletonMeta
 
 class TropiPy(metaclass=SingletonMeta):
 
@@ -47,7 +47,8 @@ class TropiPy(metaclass=SingletonMeta):
     @return OBJECT
     '''
     def get(self, modname, param=None):
-        module = __import__(modname)
+        module = __import__("tropipy." + modname)
+        print(module)
         modcls = getattr(module, modname)
         param = param != None if param else self.cfg
         instance = modcls(param)

@@ -6,8 +6,9 @@ class MainTest(unittest.TestCase):
         TppSdk = TropiPy.sdk()
         options = {
             "credential": {
-                'id': 'dsfasdfasf98a7sd98f7as098d',
-                'secret': '7df5hd7f5h7df65h8d7fhdfhfh6ddfh75h',
+                'id': 'cf33a19425421dcdfc82d26af3b126d0',
+                'secret': '4a7eb4562e21eca14b9318d685950e3e',
+                'scope': 'ALLOW_GET_PROFILE_DATA ALLOW_GET_BALANCE ALLOW_EXTERNAL_CHARGE'
             }
         }
         result = TppSdk.configure(options).get("Security")
