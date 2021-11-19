@@ -3,7 +3,7 @@ from tropipy import TropiPy
 
 class PaylinkTest(unittest.TestCase):
     def test_create_paylink(self):
-        TppSdk = TropiPy.sdk({
+        TppSdk = TropiPy({
             "credential": {
                 'id': 'cf33a19425421dcdfc82d26af3b126d0',
                 'secret': '4a7eb4562e21eca14b9318d685950e3e',
