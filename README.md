@@ -1,11 +1,13 @@
 # TropiPy
-Python SDK for TropiPay, form more information see [TropiPay Web](http://www.tropipay.com/).
+Python SDK for TropiPay, form more information see [TropiPay Web](http://www.tropipay.com/) and our [wiki](https://github.com/ameksike/tropipy/wiki).
 
 ## Install
 - pip install tropipy
+- [pypi.org](https://pypi.org/project/tropipy/) 
 
 
 ## Develop
+Contribute to us to improve our products and services
 
 ### Develop Install
 - git clone https://github.com/ameksike/tropipy.git
@@ -23,7 +25,7 @@ Python SDK for TropiPay, form more information see [TropiPay Web](http://www.tro
 
 Configure the lib: 
 ```python
-TppSdk = TropiPy.sdk({
+TppSdk = TropiPy({
    "credential": {
 		'id': 'cf33a19425421dcdfc82d26af3b126d0',
 		'secret': '4a7eb4562e21eca14b9318d685950e3e',
