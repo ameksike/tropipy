@@ -17,7 +17,7 @@ Tropipay offer online payment and collection solutions to international customer
 - Customized solutions for tourism companies.
 - Cross Border payments globally
 
-This project is focused on create a simple python SDK for TropiPay, in order to facilitate the integration of the TropiPay platform with frameworks such as Django, Flask, etc. Form more information see [TropiPay Web](http://www.tropipay.com/) and our [wiki](https://github.com/ameksike/tropipy/wiki).
+This project is focused on create a simple python SDK for TropiPay, in order to facilitate the integration of the TropiPay platform with frameworks such as [Django](https://www.djangoproject.com/), [Flask](https://flask.palletsprojects.com/en/2.0.x/), etc. Form more information see [TropiPay Web](http://www.tropipay.com/) and our [wiki](https://github.com/ameksike/tropipy/wiki).
 
 ## Install
 - pip install tropipy
