@@ -10,7 +10,6 @@ class PaylinkTest(unittest.TestCase):
                 'scope': 'ALLOW_GET_PROFILE_DATA ALLOW_GET_BALANCE ALLOW_EXTERNAL_CHARGE'
             }
         })
-        token = TppSdk.get("Security").login()
         result = TppSdk.get("Paylink").create({
             "reference": "demo23232323",
             "concept": "some product id",
@@ -27,10 +26,8 @@ class PaylinkTest(unittest.TestCase):
             "urlSuccess": "",
             "urlFailed": "",
             "urlNotification": "",
-
             "serviceDate": ""
         })
-        self.assertTrue(TppSdk.cfg['token']['access_token'] != None)
         self.assertIn('shortUrl', result)
 
 if __name__ == '__main__':

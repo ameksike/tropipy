@@ -8,7 +8,9 @@ class Paylink:
 
     def create(self, option):
         url = self.sdk.getUrl('paylink') 
-        access_token = self.sdk.cfg['token']['access_token']
-        response = requests.post(url, json=option, headers={'Authorization' : 'Bearer ' + access_token})
-        data = response.json()
+        sec = self.sdk.get("Security").login()
+        res = requests.post(url, json=option, headers={
+            'Authorization' : sec.get('token_type', 'Bearer')  + ' ' + sec.get('access_token', ' ') 
+        })
+        data = res.json()
         return data
