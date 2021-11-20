@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="tropipy",
-    version="0.0.1",
+    version="0.0.2",
     author="Antonio Membrides Espinosa, Sergio Daniel",
     author_email="tonykssa@gmail.com",
     description="Python SDK for TropiPay",
